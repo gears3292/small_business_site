@@ -1,30 +1,43 @@
+/* color scheme
+#93a3b1
+#7c898b
+#636564
+#4c443c
+#343434
+#eeeeee
+*/
+
 body {
   padding: 0;
   margin: 0;
-  color: #eee;
-  background-color: #141115;
-  font-family: sans-serif;
+  color: #eeeeee;
+  background-color: #4c443c;
+  font-family: Poiret One, sans-serif;
 }
 
 /* HEADER */
 header {
-  background-image: url();
+  background-image: url(../images/bike-red.jpeg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 .top-banner {
-  text-align: center;
+  height: 30em;
 }
 #banner-logo {
+  font-family: Amatic SC;
+  border: 1px solid #4c443c;
+  border-radius: 50em;
+  border-color: #4c443c;
 }
 nav {
-  background-color: #4C2B36;
-  border-top: 1px solid #9E4770;
-  border-bottom: 1px solid rgba(0,0,0,0);
-  border-left: 1px solid #9E4770;
-  border-right: 1px solid #9E4770;
-  box-shadow: 0px -1px 5px #9E4770;
+  color: #eeeeee;
+  background-color: #93A3B1;
+  border-bottom: 1px solid #4c443c;
+  border-top: 1px solid rgba(0,0,0,0); /* todo: fix(remove) this */
   text-align: center;
-  width: 33%;
   margin: auto;
+  position: sticky;
 }
 nav ul {
   text-decoration: none;
@@ -41,4 +54,14 @@ nav ul li {
 }
 #main-content article {
   padding: 1em;
+}
+
+.news-content {
+  float: left;
+}
+
+/* FOOTER */
+footer {
+  text-decoration: none;
+  text-align: center;
 }
