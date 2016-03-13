@@ -10,14 +10,15 @@
 body {
   padding: 0;
   margin: 0;
-  color: #eeeeee;
-  background-color: #4c443c;
-  font-family: Poiret One, sans-serif;
+  color: #010101;
+  background-color: #46494c;
+  font-family: sans-serif;
 }
 
 /* HEADER */
 header {
-  background-image: url(../images/bike-red.jpeg);
+  background-color: rgb(100,70,120);
+  background-image: url();
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -26,18 +27,18 @@ header {
 }
 #banner-logo {
   font-family: Amatic SC;
-  border: 1px solid #4c443c;
+  border: 1px solid #e2dadb;
   border-radius: 50em;
-  border-color: #4c443c;
 }
 nav {
   color: #eeeeee;
-  background-color: #93A3B1;
-  border-bottom: 1px solid #4c443c;
+  background-color: #4c5c68;
+  border-bottom: 1px solid #1985a1;
   border-top: 1px solid rgba(0,0,0,0); /* todo: fix(remove) this */
   text-align: center;
   margin: auto;
   position: sticky;
+  width: 100vw;
 }
 nav ul {
   text-decoration: none;
@@ -46,18 +47,41 @@ nav ul li {
   display: inline-block;
   padding: 0.5% 1% 0.5% 1%;
 }
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  color: #1985a1;
+  border-bottom: 2px solid #1989a1;
+  padding-bottom: 1em;
+}
 
 /* MAIN CONTENT */
 #main-content {
   width: 80%;
   margin: auto;
+  font-size: medium;
 }
 #main-content article {
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 1%;
   padding: 1em;
+  margin: 1em;
+  overflow: auto;
 }
+#bike-image-1 {
+  float: right;
+  position: relative;
+  top: -10em;
+  z-index: 1;
+}
+.mid-banner {
+  height: 25em;
+  background-color: rgb(100,70,120);
 
+}
 .news-content {
-  float: left;
+  float: right;
 }
 
 /* FOOTER */
