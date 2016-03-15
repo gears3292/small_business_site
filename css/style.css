@@ -12,33 +12,43 @@ body {
   margin: 0;
   color: #010101;
   background-color: #46494c;
-  font-family: sans-serif;
+  font-family: helvetica, sans-serif;
 }
 
 /* HEADER */
 header {
-  background-color: rgb(100,70,120);
-  background-image: url();
+  background-color: #dddddd;
+
   background-repeat: no-repeat;
-  background-position: right bottom;
-}
-.top-banner {
-  height: 30em;
+  margin-bottom: 1%;
 }
 #banner-logo {
+  /* animation-duration: 1s;
+  animation-name: drop-logo; */
   font-family: Amatic SC;
   border: 1px solid #e2dadb;
   border-radius: 50em;
 }
+/* @keyframes drop-logo {
+  from {
+    margin-top: -100%;
+  }
+  to {
+    margin-bottom: 100%;
+  }
+} */
 nav {
   color: #eeeeee;
+  font-family: Poiret One, sans-serif;
+  font-size: 115%;
   background-color: #4c5c68;
   border-bottom: 1px solid #1985a1;
   border-top: 1px solid rgba(0,0,0,0); /* todo: fix(remove) this */
   text-align: center;
   margin: auto;
-  position: sticky;
+  position: fixed;
   width: 100vw;
+  z-index: 2;
 }
 nav ul {
   text-decoration: none;
@@ -48,25 +58,28 @@ nav ul li {
   padding: 0.5% 1% 0.5% 1%;
 }
 nav a {
+  color: #e2dadb;
   text-decoration: none;
 }
 nav a:hover {
-  color: #1985a1;
-  border-bottom: 2px solid #1989a1;
-  padding-bottom: 1em;
+  transition: .5s;
+  color: #ffffff;
+}
+nav .active {
+  color: #ffffff;
 }
 
 /* MAIN CONTENT */
 #main-content {
   width: 80%;
+  padding: 2%;
   margin: auto;
-  font-size: medium;
+  font-size: large;
+  border-radius: 1em;
+  box-shadow: 0 -1px 5px 5px #333333;
 }
 #main-content article {
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 1%;
   padding: 1em;
-  margin: 1em;
   overflow: auto;
 }
 #bike-image-1 {
@@ -77,7 +90,9 @@ nav a:hover {
 }
 .mid-banner {
   height: 25em;
-  background-color: rgb(100,70,120);
+  background-color: #dddddd;
+  border-radius: 1em;
+  margin-top: 3em;
 
 }
 .news-content {
@@ -86,6 +101,34 @@ nav a:hover {
 
 /* FOOTER */
 footer {
+  width: 80%;
   text-decoration: none;
   text-align: center;
+  border-top: 1px solid silver;
+  padding: 1%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+/* 3 Col Banner */
+.image-column {
+  background-color: cornflowerblue;
+  height: 30em;
+  overflow: auto;
+  margin: auto;
+}
+#column-1, #column-2, #column-3 {
+  float: left;
+  height: inherit;
+  width: 33.33%;
+  text-align: center;
+}
+#column-1 {
+  background-color: #aaaaaa;
+}
+#column-2 {
+  background-color: #777777;
+}
+#column-3 {
+  background-color: #333333;
 }
